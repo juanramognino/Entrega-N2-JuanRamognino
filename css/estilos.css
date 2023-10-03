@@ -1,0 +1,870 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    border: 0 ;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    text-align: center !important; 
+    font-family: 'Poppins' sans-serif !important ; 
+}
+
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+
+section [id] {
+    scroll-margin-top: 70px;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Arranca parte de la 1 pagina */
+.header  {
+        background-image: url(../img/osp_f.jpg) ;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        padding: 210px ;
+}
+
+
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+.logo {
+    color: #899B45;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+
+
+.menu .navbar ul {
+    margin-right: 20px;
+    float: right
+}
+
+.menu .navbar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+
+.menu .navbar ul li a{
+    color: #899B45;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.menu .navbar li a.active, .menu .navbar li a:hover{
+    background: #d4e49f;
+    transition: .5s;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+
+.menu .navbar ul li a:hover{
+    color: #899B45;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 40px;
+    line-height: 77px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 0 250px;
+    margin-bottom:25px ;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #899B45;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid #899B45;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: initial;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #899B45;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.menu .navbar section{
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+
+/* Arranca parte de Servicios pagina 3 */
+
+/*  */
+.sau {
+    padding: 170px !important;
+    background: #899B45;
+    color: rgb(0, 0, 0);
+    padding-top: 40px !important;
+}
+
+.sau h4{
+    padding-bottom: 10px !important;
+    color: black !important;
+    
+}
+
+.box-container {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    text-align: center !important;
+
+}
+
+.box-container .box {
+    height: 150px !important;
+    width: 272px !important;
+    background: #9bad58;
+    border-radius: 16px !important;
+    box-shadow: 0 .3px 5px rgba(0, 0, 0, 5);
+    margin: 15px !important;
+}
+
+.box-container .box h3 {
+    font-size: 20px !important;
+    color: black
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/* Termina sau servicios */
+
+.about {
+    background: white;
+}
+
+
+.title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.btn {
+    display: inline-block;
+    height: 15px;
+    padding: 10px 40px;
+    border: 2px solid #899B45;
+    color: black;
+    text-decoration: none;
+    background: transparent;
+}
+
+/* Investigar sobre como mejorar los botones */
+
+.btn:hover {
+    background: none;
+}
+
+/*Mejorar el boton de el inicio de mas informaciom*/
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+/* Arranca parte de Nosotros pagina 2 */
+.general {
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 70px;
+    background-color: white;
+}
+
+.general-2 {
+    background-image: url(../img/osp_a.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+/* Ajustar el tamaño de las imagenes para que queden bien */
+
+.general-3 {
+    background-image: url(../img/osp_e.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 30px !important;
+    line-height: 70px !important;
+    color: black !important;
+    text-transform: uppercase !important;
+    margin-bottom: 20px !important;
+    margin-top: 70px !important;
+}
+
+p {
+    font-size: 15px !important;
+    color: #000000 !important;
+    margin: 25px 0 45px 0 !important;
+}
+
+/* Termina Nosotros */
+
+/* Arranca parte Productos pagina 4 */
+
+.product {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.products-txt {
+    text-align: center;
+}
+
+.products-txt p {
+    font-size: 25px;
+    margin-top: 1px;
+}
+
+.products-txt h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.products-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cambiar clase por producto-category, empezar a usar el ingles */
+
+.product-category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px); 
+    text-align: center;
+}
+
+.product-category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-category h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-category p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-category a {
+    display: inline-block;
+    background-color: #899B45;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #899B45;
+}
+
+.product-category a:hover {
+    background-color: transparent;
+}
+
+/*Arranca css de la parte de productos de cat-uno*/
+
+.product-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px; 
+    box-sizing: border-box;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-section h2{
+    color: #899B45;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #899B45;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #6b7e36;
+}
+
+/* Termina parte productos */
+
+
+/* Arranca footer ultima pagina */
+
+.footer {
+    padding: 8px 0 8px 0;;
+    background-color: whitesmoke
+}
+
+.footer-link {
+    display: flex;
+}
+
+.link {
+    width: 400px;
+}
+
+.col-lg-4 {
+    width: 400px;
+}
+
+.link h3 {
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.link a{ 
+    font-size: 15px;
+    color: #414247;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.col-lg-4 a {
+    font-size: 15px;
+    color: #414247;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.link a:hover {
+    color: #b6b6b0;
+}
+
+.socials {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.socials a {
+    display: inline-block;
+    min-height: 30px;
+    width: 35px;
+    background-color: #9c9c9e;
+    margin: 0 15px 15px 0;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 30%;
+    color: black;
+    font-size: 23px;
+}
+
+.socials a:hover {
+    background-color: white;
+}
+
+/* Acordarse de mejorar los iconos puestos */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: transparent;
+    padding: 14px;
+    outline: none;
+    border: 2px solid #5F5F6E;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+::placeholder {
+    color: #9c9c9e;
+}
+
+.button {
+    background-color: #b6b6b0;
+    color: #000000;
+    border: 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text p {
+    font-size: 15px;
+    color: #9c9c9e;
+}
+
+
+/* Termina footer */
+
+@media (max-width: 768px) {
+
+    
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        box-shadow:  0 0 1px rgba(0, 0, 0, 0.1);;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    .header {
+        padding: 80px 30px 50px 30px;
+        flex-direction: column;
+        align-items: center;
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .header-content p {
+        padding: 0 20px;
+    }
+
+    .sau {
+        padding: 30px;
+    }
+
+    .sau h4 {
+        padding-bottom: 5px;
+    }
+
+    .box-container .box {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+.general-2,
+.general-3 {
+    width: 100%;
+    height: 535px;
+    background-size: cover; /* Cambia a "contain" para ajustar la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .product-category {
+        width: 100%;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .general-1 h2 {
+        font-size: 10px; 
+        margin: 10px 0; 
+    }
+
+    .general h2 {
+        font-size: 24px; /* Tamaño de fuente para los títulos */
+        line-height: 20px; /* Espaciado entre líneas para los títulos */
+        margin-top: 20px; /* Espaciado superior para los títulos */
+        margin-bottom: 10px; /* Espaciado inferior para los títulos */
+    }
+
+    .general p {
+        font-size: 18px; /* Tamaño de fuente para los párrafos */
+        margin: 15px 0; /* Espaciado vertical para los párrafos */
+    }
+
+    /* Alinea el contenido de la clase .general-1 */
+    .general-1 {
+        padding: 1px; /* Ajusta el espaciado interior según sea necesario */
+    }
+}
+
+
+/* Media query para pantallas pequeñas (como teléfonos) */
+@media (max-width: 480px) {
+
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        box-shadow:  0 0 1px rgba(0, 0, 0, 0.1);;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    .menu {
+        padding: 10px 0;
+    }
+
+    .menu .navbar ul li {
+        line-height: 50px;
+    }
+
+    .btn-1 {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .btn-home a {
+        margin: 0 5px;
+    }
+
+    .general h2 {
+        font-size: 18px; 
+        line-height: 36px; 
+        margin-top: 15px; 
+        margin-bottom: 8px; 
+    }
+
+    .general p {
+        font-size: 12px; 
+        margin: 10px 0; 
+    }
+
+    .general-1 {
+        padding: 40px;
+    }
+
+    .general-1 h2 {
+        font-size: 16px; 
+        margin: 8px 0
+    }
+    .general-2,
+    .general-3 {
+        width: 100%;
+        height: 880px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 20px 0 40px 0;
+    }
+
+    .sau {
+        padding: 30px; 
+        text-align: center; 
+    }
+
+    .sau h4 {
+        padding-bottom: 10px; 
+        color: black; 
+        font-size: 18px; 
+    }
+
+
+    .box-container {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+
+    .box-container .box {
+        width: 100%; 
+    }
+
+    .box-container .box h3 {
+        font-size: 20px; 
+        color: black; 
+    }
+
+    .box-container .box p {
+        font-size: 16px; 
+    }
+
+    .product-category {
+        width: 100%;
+    }
+
+    .product-category h3 {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .product-category p {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .product-category a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .buy-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+
+    .footer-link {
+        flex-direction: column;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    .link h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+        margin-top: 16px;
+    }
+
+    .link a,
+    .col-lg-4 a {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .socials a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
